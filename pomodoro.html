@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>помідорчик</title>
+    <script src="https://kit.fontawesome.com/ed1ed8eca5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pomo.css">
+
+</head>
+<body>
+    <div class="head">
+        <p><i class="fa-solid fa-ghost"></i>&nbsp;&nbsp;pomoІван</p>
+        <button class="settings">Settings &nbsp;<i class="fa-solid fa-gear"></i></button>
+    </div>
+
+    <div class="timeBar">
+        <div class="progress"></div>
+    </div>
+
+    <div class="mainCont">
+        <div class="inside">
+            <button class="pomodoro">Pomodoro</button>
+            <button class="short">Short break</button>
+            <button class="long">Long break</button>
+        </div>
+
+        <div class="time"></div>
+
+        <dialog>
+            <div class="cont">
+                <p class="pDialog">Setting</p>
+                <button class="close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="timer">
+                <p>timer</p>
+                <div class="labels">
+                    <label for="pomodoro">pomodoro</label>
+                    <label for="short">short break</label>
+                    <label for="long">long break</label>
+                </div>
+
+                <div class="inputs">
+                    <input type="number" id="pomodoro" min="1" max="60" value="25">
+                    <input type="number" id="short" min="1" max="60" value="1">
+                    <input type="number" id="long" min="1" max="60" value="1">
+                </div>
+            </div>
+            
+        </dialog>
+
+        <button class="playStop">Старт</button>
+    </div>
+
+    <div class="bottom">
+        <p class="counter">#1</p>
+        <p class="focus">time to focus!</p>
+    </div>
+
+
+    <script src="pomo.js"></script>
+</body>
+</html>
